@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>abstract</title><link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css' /><link href='https://fonts.googleapis.com/css?family=Raleway:600,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+<title>abstract</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
 iframe { margin: auto; }
@@ -144,56 +144,63 @@ iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 
 
-@include-when-export url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic);
-@include-when-export url(https://fonts.googleapis.com/css?family=Raleway:600,400&subset=latin,latin-ext);
-
-@charset "UTF-8";
 @font-face {
-	font-family: 'TeXGyreAdventor';
-	font-style: normal;
-	font-weight: normal;
-	src: url(file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-regular.otf);
+  font-family: Source Han Sans SC;
+  font-weight: normal;
+  src: local('Source Han Sans SC Regular'), url("file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/catfish/SourceHanSansSC-Regular.otf");
 }
 @font-face {
-	font-family: 'TeXGyreAdventor';
-	font-style: normal;
-	font-weight: bold;
-	src: url(file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-bold.otf);
+  font-family: Source Han Sans;
+  font-weight: bold;
+  src: local('Source Han Sans SC Bold'), url("file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/catfish/SourceHanSansSC-Bold.otf");
 }
 @font-face {
-	font-family: 'TeXGyreAdventor';
-	font-style: italic;
-	font-weight: normal;
-	src: url(file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-italic.otf);
+  font-family: Source Han Serif;
+  font-weight: normal;
+  src: local('Source Han Serif SC Regular'), url("file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/catfish/SourceHanSerifSC-Regular.otf");
 }
 @font-face {
-	font-family: 'TeXGyreAdventor';
-	font-style: italic;
-	font-weight: bold;
-	src: url(file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-bolditalic.otf);
+  font-family: Source Han Serif;
+  font-weight: bold;
+  src: local('Source Han Serif SC Bold'), url("file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/catfish/SourceHanSerifSC-Bold.otf");
 }
-
-:root {
-	--window-border: none;
-	--typora-center-window-title: true;
-	--active-file-bg-color: #f3f3f3;
-	--bg-color: #fcfcfc;
-	--control-text-color: #777;
+@font-face {
+  font-family: mononoki;
+  font-style: normal;
+  font-weight: normal;
+  src: local('mononoki Regular'), url("file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/catfish/mononoki-Regular.woff");
 }
-
-.mac-seamless-mode #typora-sidebar {
-	top: var(--mac-title-bar-height);
-	padding-top: 0;
-	height: auto;
+@font-face {
+  font-family: mononoki;
+  font-style: italic;
+  font-weight: normal;
+  src: local('mononoki Italic'), url("file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/catfish/mononoki-Italic.woff");
 }
-
-html,
-body,
-#write{
-	background: #fcfcfc;
-	background: var(--bg-color);
-	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Raleway', "STHeiti", sans-serif;
-	font-weight: 300;
+@font-face {
+  font-family: mononoki;
+  font-style: normal;
+  font-weight: bold;
+  src: local('mononoki Bold'), url("file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/catfish/mononoki-Bold.woff");
+}
+@font-face {
+  font-family: mononoki;
+  font-style: italic;
+  font-weight: bold;
+  src: local('mononoki Bold Italic'), url("file:///Users/mark/Library/Application%20Support/abnerworks.Typora/themes/catfish/mononoki-BoldItalic.woff");
+}
+html {
+  font-size: 16px;
+}
+body {
+  background: #fff;
+  font-family: Source Han Sans SC, sans-serif;
+  color: #555;
+}
+#write {
+  max-width: 60em;
+}
+margin 0 auto {
+  padding: 20px 30px 50px;
 }
 h1,
 h2,
@@ -201,364 +208,266 @@ h3,
 h4,
 h5,
 h6 {
-	color: #111;
-	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Ubuntu', "STHeiti", sans-serif;
-}
-
-html {
-	font-size:16px;
-}
-
-#write {
-	max-width: 914px;
-	text-align: justify;
-}
-
-#write>h1:first-child {
-	margin-top: 2.75rem;
-}
-#write>h2:first-child {
-	margin-top: 1.75rem;
-}
-#write>h3:first-child {
-	margin-top: 1rem;
-}
-#write>h4:first-child {
-	margin-top: 0.5rem;
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  line-height: 1.4em;
 }
 h1 {
-	font-weight: normal;
-	line-height: 4rem;
-	margin: 0 0 1.75rem;
-	padding: 20px 30px;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 4rem;
+  font-size: 2em;
+  line-height: 1.2em;
 }
 h2 {
-	font-weight: normal;
-	line-height: 3rem;
-	margin: 0 0 1.9375rem;
-	padding: 0 30px;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 3rem
+  font-size: 1.5em;
+  line-height: 1.225em;
 }
 h3 {
-	font-weight: normal;
+  font-size: 1.3em;
+  line-height: 1.43em;
 }
 h4 {
-	font-weight: normal;
+  font-size: 1.2em;
 }
 h5 {
-	font-size: 1.125rem;
-	font-weight: normal;
+  font-size: 1em;
 }
 h6 {
-	font-size: 1rem;
-	font-weight: bold;
+  font-size: 1em;
+  color: #999;
 }
-p {
-	color: #111;
-	font-size: 1rem;
-	line-height: 1.75rem;
-	margin: 0 0 1.25rem;
+hr {
+  border: 1px solid #ddd;
 }
-#write>h3.md-focus:before {
-	left: -1.875rem;
-	top: 0.5rem;
-	padding: 2px;
+a {
+  text-decoration: none;
+  color: #258fb8;
 }
-#write>h4.md-focus:before {
-	left: -1.875rem;
-	top: 0.3125rem;
-	padding: 2px;
+a:hover,
+a:active {
+  text-decoration: underline;
 }
-#write>h5.md-focus:before {
-	left: -1.875rem;
-	top: 0.25rem;
-	padding: 2px;
+ul,
+ol {
+  padding-left: 2em;
 }
-#write>h6.md-focus:before {
-	left: -1.875rem;
-	top: .125rem;
-	padding: 2px;
+.task-list {
+  padding-left: 2em;
 }
-/*@media screen and (min-width: 48em) {
-	.h1,
-	h1 {
-		font-size: 3.250rem;
-	}
-	.h2,
-	h2 {
-		font-size: 2.298rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.625rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.250rem;
-	}
-	.h5,
-	h5 {
-		font-size: 1.150rem;
-	}
-	.h6,
-	h6 {
-		font-size: 1rem;
-	}
-	#write>h4.md-focus:before,
-	#write>h5.md-focus:before,
-	#write>h6.md-focus:before {
-		top: 1px;
-	}
-	p {
-		font-size: 1.25rem;
-		line-height: 1.8;
-	}
-	table {
-		font-size: 1.25rem;
-	}
-}*/
-@media screen and (max-width: 48em) {
-	blockquote {
-		margin-left: 1rem;
-		margin-right: 0;
-		padding: 0.5em;
-	}
-	.h1,
-	h1 {
-		font-size: 2.827rem;
-	}
-	.h2,
-	h2 {
-		font-size: 1.999rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.413rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.250rem;
-	}
-	.h5,
-	h5 {
-		font-size: 1.150rem;
-	}
-	.h6,
-	h6 {
-		font-size: 1rem;
-	}
+.task-list-item {
+  padding-left: 1.6em;
 }
-a,
-.md-def-url {
-	color: #990000;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
+.task-list-item input {
+  top: 3px;
+  left: 8px;
 }
 table {
-	margin-bottom: 20px
-}
-table th,
-table td {
-	padding: 8px;
-	line-height: 1.25rem;
-	vertical-align: top;
-	border-top: 1px solid #ddd
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 table th {
-	font-weight: bold
+  font-weight: bold;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 0.5em;
 }
-table thead th {
-	vertical-align: bottom
+table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
 }
-table caption+thead tr:first-child th,
-table caption+thead tr:first-child td,
-table colgroup+thead tr:first-child th,
-table colgroup+thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
-	border-top: 0
+blockquote {
+  border-left: 5px solid #ddd;
+  padding-left: 0.5em;
+  font-family: Source Han Serif SC, serif;
+  color: #555;
 }
-table tbody+tbody {
-	border-top: 2px solid #ddd
+blockquote blockquote {
+  padding-right: 0;
 }
-code, .md-fences {
-	padding: .5em;
-	/*background: #f0f0f0;*/
-	border: 1px solid #ccc;
-	padding: .1em;
-	font-size: 0.9em;
-	margin-left: 0.2em;
-	margin-right: 0.2em;
+.md-fences,
+code,
+tt {
+  margin: 0 0.3em;
+  padding: 0 0.3em;
+  background: #eee;
+  font-family: mononoki, monospace;
+  text-shadow: 0 1px #fff;
 }
 .md-fences {
-	margin: 0 0 20px;
-	font-size: 1em;
-	padding: 0.3em 1em;
-  	padding-top: 0.4em;
-}
-.task-list{
-	padding-left: 0;
+  margin: 15px auto;
+  padding: 0.7em 1em;
+  text-shadow: none;
 }
 
-.task-list-item {
-	padding-left:2.125rem;
+  /** ported from https://codemirror.net/theme/material.css **/
+  /*
+
+      Name:       material
+      Author:     Michael Kaminsky (http://github.com/mkaminsky11)
+
+      Original material color scheme by Mattia Astorino (https://github.com/equinusocio/material-theme)
+
+  */
+
+  .cm-s-inner {
+  background-color: #263238;
+  color: rgba(233, 237, 237, 1);
+  }
+  .cm-s-inner .CodeMirror-gutters {
+  background: #263238;
+  color: rgb(83,127,126);
+  border: none;
+  }
+  .cm-s-inner .CodeMirror-guttermarker, .cm-s-inner .CodeMirror-guttermarker-subtle, .cm-s-inner .CodeMirror-linenumber { color: rgb(83,127,126); }
+  .cm-s-inner .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+  .cm-s-inner div.CodeMirror-selected { background: rgba(255, 255, 255, 0.15); }
+  .cm-s-inner.CodeMirror-focused div.CodeMirror-selected { background: rgba(255, 255, 255, 0.10); }
+  .cm-s-inner .CodeMirror-line::selection, .cm-s-inner .CodeMirror-line > span::selection, .cm-s-inner .CodeMirror-line > span > span::selection { background: rgba(255, 255, 255, 0.10); }
+  .cm-s-inner .CodeMirror-line::-moz-selection, .cm-s-inner .CodeMirror-line > span::-moz-selection, .cm-s-inner .CodeMirror-line > span > span::-moz-selection { background: rgba(255, 255, 255, 0.10); }
+
+  .cm-s-inner .CodeMirror-activeline-background { background: rgba(0, 0, 0, 0); }
+  .cm-s-inner .cm-keyword { color: rgba(199, 146, 234, 1); }
+  .cm-s-inner .cm-operator { color: rgba(233, 237, 237, 1); }
+  .cm-s-inner .cm-variable-2 { color: #80CBC4; }
+  .cm-s-inner .cm-variable-3 { color: #82B1FF; }
+  .cm-s-inner .cm-builtin { color: #DECB6B; }
+  .cm-s-inner .cm-atom { color: #F77669; }
+  .cm-s-inner .cm-number { color: #F77669; }
+  .cm-s-inner .cm-def { color: rgba(233, 237, 237, 1); }
+  .cm-s-inner .cm-string { color: #C3E88D; }
+  .cm-s-inner .cm-string-2 { color: #80CBC4; }
+  .cm-s-inner .cm-comment { color: #546E7A; }
+  .cm-s-inner .cm-variable { color: #82B1FF; }
+  .cm-s-inner .cm-tag { color: #80CBC4; }
+  .cm-s-inner .cm-meta { color: #80CBC4; }
+  .cm-s-inner .cm-attribute { color: #FFCB6B; }
+  .cm-s-inner .cm-property { color: #80CBAE; }
+  .cm-s-inner .cm-qualifier { color: #DECB6B; }
+  .cm-s-inner .cm-variable-3 { color: #DECB6B; }
+  .cm-s-inner .cm-tag { color: rgba(255, 83, 112, 1); }
+  .cm-s-inner .cm-error {
+  color: rgba(255, 255, 255, 1.0);
+  background-color: #EC5F67;
+  }
+  .cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+  }
+
+  /**apply to code fences with plan text**/
+  .md-fences {
+  background-color: #263238;
+  color: rgba(233, 237, 237, 1);
+  border: none;
+  }
+
+  .md-fences .code-tooltip {
+  background-color: #263238;
+  }
+
+  .cm-s-typora-default {
+  background-color: #263238;
+  color: rgba(233, 237, 237, 1);
+  }
+  .cm-s-typora-default .CodeMirror-gutters {
+  background: #263238;
+  color: rgb(83,127,126);
+  border: none;
+  }
+  .cm-s-typora-default .CodeMirror-guttermarker, .cm-s-typora-default .CodeMirror-guttermarker-subtle, .cm-s-typora-default .CodeMirror-linenumber { color: rgb(83,127,126); }
+  .cm-s-typora-default .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+  .cm-s-typora-default div.CodeMirror-selected { background: rgba(255, 255, 255, 0.15); }
+  .cm-s-typora-default.CodeMirror-focused div.CodeMirror-selected { background: rgba(255, 255, 255, 0.10); }
+  .cm-s-typora-default .CodeMirror-line::selection, .cm-s-typora-default .CodeMirror-line > span::selection, .cm-s-typora-default .CodeMirror-line > span > span::selection { background: rgba(255, 255, 255, 0.10); }
+  .cm-s-typora-default .CodeMirror-line::-moz-selection, .cm-s-typora-default .CodeMirror-line > span::-moz-selection, .cm-s-typora-default .CodeMirror-line > span > span::-moz-selection { background: rgba(255, 255, 255, 0.10); }
+
+  .cm-s-typora-default .CodeMirror-activeline-background { background: rgba(0, 0, 0, 0); }
+  .cm-s-typora-default .cm-keyword { color: rgba(199, 146, 234, 1); }
+  .cm-s-typora-default .cm-operator { color: rgba(233, 237, 237, 1); }
+  .cm-s-typora-default .cm-variable-2 { color: #80CBC4; }
+  .cm-s-typora-default .cm-variable-3 { color: #82B1FF; }
+  .cm-s-typora-default .cm-builtin { color: #DECB6B; }
+  .cm-s-typora-default .cm-atom { color: #F77669; }
+  .cm-s-typora-default .cm-number { color: #F77669; }
+  .cm-s-typora-default .cm-def { color: rgba(233, 237, 237, 1); }
+  .cm-s-typora-default .cm-string { color: #C3E88D; }
+  .cm-s-typora-default .cm-string-2 { color: #80CBC4; }
+  .cm-s-typora-default .cm-comment { color: #546E7A; }
+  .cm-s-typora-default .cm-variable { color: #82B1FF; }
+  .cm-s-typora-default .cm-tag { color: #80CBC4; }
+  .cm-s-typora-default .cm-meta { color: #80CBC4; }
+  .cm-s-typora-default .cm-attribute { color: #FFCB6B; }
+  .cm-s-typora-default .cm-property { color: #80CBAE; }
+  .cm-s-typora-default .cm-qualifier { color: #DECB6B; }
+  .cm-s-typora-default .cm-variable-3 { color: #DECB6B; }
+  .cm-s-typora-default .cm-tag { color: rgba(255, 83, 112, 1); }
+  .cm-s-typora-default .cm-error {
+  color: rgba(255, 255, 255, 1.0);
+  background-color: #EC5F67;
+  }
+  .cm-s-typora-default .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+  }
+
+  /**apply to code fences with plan text**/
+  .md-fences {
+  background-color: #263238;
+  color: rgba(233, 237, 237, 1);
+  border: none;
+  }
+
+  .md-fences .code-tooltip {
+  background-color: #263238;
+  }
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid #e4629a;
 }
 
-.task-list-item input {
-	top: 3px;
-}
-
-.md-task-list-item input {
-	margin-left: -1.5em;
-}
-
-.task-list-item input:before {
-	content: "";
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	vertical-align: middle;
-	text-align: center;
-	border: 1px solid gray;
-	background-color: #fdfdfd;
-	margin-left: 0;
-	-webkit-appearance: none;
-	margin-top: -1rem;
-}
-
-.typora-node .task-list-item input:before {
-	top: 0.3ex;
-	position: absolute;
-}
-
-.task-list-item input:checked:before,
-.task-list-item input[checked]:before{
-	content: '\25FC';
-	/*◘*/
-	font-size: 0.8125rem;
-	line-height: 0.9375rem;
-}
-
-/* Chrome 29+ */
-@media screen and (-webkit-min-device-pixel-ratio:0)
-  and (min-resolution:.001dpcm) {
-    .task-list-item input:before {
-    	margin-top: -0.2rem;
-    }
-
-    .task-list-item input:checked:before,
-	.task-list-item input[checked]:before {
-		margin-top: -0.2rem;
-	}
-}
-
-blockquote {
-	margin: 0 0 1.11111rem;
-	padding: 0.5rem 1.11111rem 0 1.05556rem;
-	border-left: 1px solid gray;
-}
-blockquote,
-blockquote p {
-	line-height: 1.6;
-	color: #6f6f6f;
-}
-#write pre.md-meta-block {
-	min-height: 30px;
-	background: #f8f8f8;
-	padding: 1.5em;
-	font-weight: 300;
-	font-size: 1em;
-	padding-bottom: 1.5em;
-	padding-top: 3em;
-    margin-top: -1.5em;
-	color: #999;
-	
-	width: 100vw;
-	max-width: calc(100% + 60px);
-	margin-left: -30px;
-	border-left: 30px #f8f8f8 solid;
-	border-right: 30px #f8f8f8 solid;
-}
-.MathJax_Display {
-	font-size: 0.9em;
-	margin-top: 0.5em;
-	margin-bottom: 0;
-}
-p.mathjax-block,
-.mathjax-block {
-	padding-bottom: 0;
-}
-.mathjax-block>.code-tooltip {
-	bottom: 5px;
-	box-shadow: none;
-}
+  #write pre.md-meta-block {
+      padding: 1em;
+      background-color: #fff;
+      border-bottom: 1px dashed #ddd;
+      color: #80cbc4;
+      margin-top: 0 !important;
+  }
 .md-image>.md-meta {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+  color: inherit;
 }
-.md-image>img {
-	margin-top: 2px;
+header,
+.context-menu,
+.megamenu-content,
+footer {
+  font-family: Source Han Sans SC, sans-serif;
 }
-.md-image>.md-meta:first-of-type:before {
-	padding-left: 4px;
+@media print {
+  html {
+    font-size: 13px;
+  }
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+  pre {
+    word-wrap: break-word;
+  }
 }
-
-#typora-source {
-	color: #555;
+header,
+.context-menu,
+.megamenu-content,
+footer {
+  font-family: Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif;
 }
-
-/** ui for windows **/
-#md-searchpanel {
-    border-bottom: 1px solid #ccc;
-}
-
-#md-searchpanel .btn {
-    border: 1px solid #ccc;
-}
-
-#md-notification:before {
-	top: 14px;
-}
-
-#md-notification {
-	background: #eee;
-}
-
-.megamenu-menu-panel .btn {
-	border: 1px solid #ccc;
+.md-diagram-panel-preview {
+  color: #263238;
 }
 
-#typora-sidebar {
-	box-shadow: none;
-}
-
-.file-list-item ,
-.show-folder-name .file-list-item {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	line-height: 20px;
-}
-
-.file-list-item-summary {
-	height: 40px;
-	line-height: 20px;
-}
-
-.ty-table-edit {
-	background: #ededed;
-}
 
  .typora-export p, .typora-export .footnote-line {white-space: normal;} 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h1><a name='header-n0' class='md-header-anchor '></a>靈修展望會</h1><hr /><h2><a name='header-n12' class='md-header-anchor '></a>短講</h2><p>開場</p><ul><li>靈修的第一個步驟是檢討自己</li><li>古語告訴我們：自己檢討自己能使自己有益處</li><li>願今天我們的檢討能使我們知道教會的缺失，並使我們自己與教會有益處</li><li>每一次舉辦這種檢討會的時候願大家彼此檢討，成長</li></ul><p>兩件事情要大家討論</p><ol><li>教會與個人目前有什麼需要改進</li><li>對未來牧者有什麼樣的期待</li></ol><p>&nbsp;</p><p>猶太書 1:20 - 23：「親愛的弟兄啊，你們卻要在至聖的真道上造就自己，在聖靈裏禱告，保守自己常在神的愛中，仰望我們主耶穌基督的憐憫，直到永生。有些人存疑心，你們要憐憫他們；有些人你們要從火中搶出來，搭救他們；有些人你們要存懼怕的心憐憫他們，連那被情慾沾染的衣服也當厭惡。」</p><ul><li>建造要從自己做起（在至聖的真道上造就自己）-&gt; 才能成為神使用的器具</li></ul></div>
+<div  id='write'  class = 'is-mac'><h1><a name='header-n0' class='md-header-anchor '></a>靈修展望會</h1><hr /><h2><a name='header-n3' class='md-header-anchor '></a>短講</h2><p>開場</p><ul><li>靈修的第一個步驟是檢討自己</li><li>古語告訴我們：自己檢討自己能使自己有益處</li><li>願今天我們的檢討能使我們知道教會的缺失，並使我們自己與教會有益處</li><li>每一次舉辦這種檢討會的時候願大家彼此檢討，成長</li></ul><p>兩件事情要大家討論</p><ol start='' ><li>教會與個人目前有什麼需要改進</li><li>對未來牧者有什麼樣的期待</li></ol><p>&nbsp;</p><p>猶太書 1:20 - 23：「親愛的弟兄啊，你們卻要在至聖的真道上造就自己，在聖靈裏禱告，保守自己常在神的愛中，仰望我們主耶穌基督的憐憫，直到永生。有些人存疑心，你們要憐憫他們；有些人你們要從火中搶出來，搭救他們；有些人你們要存懼怕的心憐憫他們，連那被情慾沾染的衣服也當厭惡。」</p><ul><li>建造要從自己做起（在至聖的真道上造就自己）-&gt; 才能成為神使用的器具</li></ul><p>&nbsp;</p><h3><a name='header-n26' class='md-header-anchor '></a>成為神的器具要先建造自己信仰的基石</h3><ul><li>猶大的身份是耶穌的弟弟，在耶穌受釘前猶大並不喜歡耶穌，直到耶穌受釘後才認識這個真理</li><li>時代的變遷中，人要改變到<strong>真理的真道上</strong></li><li>要建造的是榮耀上帝的事</li></ul><p>&nbsp;</p><h3><a name='header-n35' class='md-header-anchor '></a>為什麼要擺上自己</h3><ul><li><p>聖經中提醒我們要「擺上自己」</p></li><li><p>要有樂意擺上自己被神使用的心志</p></li><li><p>擺上自己的理由：</p><ol start='' ><li><p>這是上帝的呼召
+在（創世記 24:50）「拉班和彼土利回答說：『這事乃出於耶和華，我們不能向你說好說歹。』」</p><p>當驢子被上帝選擇時，它便與上帝同得榮耀</p><p>當神要使用我們的時候，不能拒絕</p></li><li><p>要記得這是上帝的恩典</p><p>上帝從眾人中選擇你來服事，這就是榮耀與恩典</p><p>在恩典中我們應該歡喜順服來服事</p></li><li><p>擺上自己要完全交給上帝</p><p>當被神使用的時候不應該有一大堆自己的意見</p><p>當完全被神使用的時候會有完全不同的果效（就如五餅二魚的見證）</p></li><li><p>要立志盡本分</p><p>聖經中有 5000, 2000, 1000 的寓言，神所看重的是照各人的能力盡本分</p><p>神所看的不是做的事有多大，而是盡多少心力</p><p>在約翰福音 21:18-19 耶穌對彼得說：「『我實實在在地告訴你，你年少的時候，自己束上帶子，隨意往來；但年老的時候，你要伸出手來，別人要把你束上，帶你到不願意去的地方。』說了這話，就對他說：『你跟從我吧！』」</p></li></ol></li></ul><p>&nbsp;</p><p>在這個年度主題「裝備自己」當中勸勉彼此要：1. 在至聖的真道上造就自己；2. 要完全的擺上自己讓神使用，在教會服事中不能有「捨不得」，當能完全擺上自己服事的時候，才能得到神的祝福。</p></div>
 </body>
 </html>
